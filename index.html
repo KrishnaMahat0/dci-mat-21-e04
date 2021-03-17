@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>flexbox</title>
+    <style>
+        .flex-box-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(239, 247, 250);
+            border: 2px solid black;
+            padding: 10px 10px;
+            margin: 20px;
+        }
+        .flex-item-1{
+            flex-grow: 1;
+            background-color: gray;
+            margin: 0 5px;
+            text-align: center;
+            color: white;
+            height: 30px;
+            padding-top: 10px;
+            
+        }
+        .flex-item-2{
+            flex-grow: 2;
+            background-color: rgb(226, 72, 17);
+            margin: 0 5px;
+            text-align: center;
+            color: white;
+            height: 30px;
+            padding-top: 10px;
+        }
+        .flex-box-3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(239, 247, 250);
+            border: 2px solid black;
+            padding: 10px 10px;
+            margin: 20px;
+            
+            
+        }
+        .flex-item-3a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+            background-color: gray;
+            margin: 0 5px;
+            text-align: center;
+            color: rgb(22, 19, 19);
+            height: 250px;
+            width: 250px;
+            padding-top: 10px;
+
+        }
+        .flex-item-3b{
+             flex-grow: 1;
+            background-color: gray;
+            margin: 0 5px;
+            text-align: center;
+            color: white;
+            height: 30px;
+            padding-top: 10px;
+        }
+        .info{
+            
+            background-color: rgb(165, 31, 31);
+            margin: 6px;
+            
+        }
+        img{
+            border: 6px solid black;
+            justify-content: flex-start;
+
+        }
+
+        @media (max-width:1080px){
+            #product{
+                background-color: rgb(231, 223, 151);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+            }
+        }  
+        @media (max-width:520px){
+            #flex-picture {
+                background-color: lightblue;
+                flex-direction: column-reverse;
+                
+                
+            }
+            .flex-item-3a{
+                width: 100%;
+                height: auto;
+            }
+        }
+          
+
+    </style>
+</head>
+<body>
+    <section id="product">
+        <div class="flex-box-1">
+            <div class="flex-item-1">
+                Ein Element
+            </div>
+            <div class="flex-item-2">
+                Ein Element
+            </div>
+            <div class="flex-item-1">
+                Ein Element
+            </div>
+        </div>
+        <div class="flex-box-1">
+            <div class="flex-item-1">
+                Ein Element
+            </div>
+            <div class="flex-item-1">
+                Ein Element
+            </div>
+        </div>
+    </section>
+    <section id="flex-picture">
+        <div class="flex-box-3">
+            <div class="flex-item-3a">
+                <img src="/images/pine.png" alt="pine tree" width="250" height="250">
+                <p class="info">Informationen</p>
+            </div>
+            <div class="flex-item-3b">
+                Ein Element
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
